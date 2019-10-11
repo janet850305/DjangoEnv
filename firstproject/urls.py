@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import url
-from myapp.views import sayhello,hello2,hello3
+from myapp.views import sayhello,hello2,hello3,hello4
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',sayhello),
     url(r'^hello2/(\w+)/$',hello2),
     url(r'^hello3/(\w+)/$',hello3),
+    url(r'^hello4/(\w+)/$',hello4),
 ]
